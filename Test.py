@@ -12,7 +12,7 @@ def nextLine():
     print("\r\n")
 
 
-tile("Hello")
+tile(str="Hello")
 print "Hello world"
 nextLine()
 
@@ -47,3 +47,13 @@ def fibonacci(n):
 f = fibonacci(10)
 for i in f:
     print i,
+
+
+# 参数顺序,使用形参来传参可避免按顺序传递参数的问题
+# 定义函数可以设置默认值
+
+def introduce(name, age=20):
+    print "传入的名字是 %s,今年%d" % (name, age)
+
+
+introduce(name="aaa")
